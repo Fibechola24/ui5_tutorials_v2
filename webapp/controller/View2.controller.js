@@ -5,7 +5,8 @@ sap.ui.define([
 
     return Controller.extend("com.clientname.zsapui5.controller.View2", {
        onNavBack: function () {
-      this.getOwnerComponent().getRouter().navTo("RouteView1");     //navTo takes only the routename
+      //this.getOwnerComponent().getRouter().navTo("RouteView1");     //navTo takes only the routename
+      history.go(-1);               //better way for a nav back scenario
     }
     });
 });

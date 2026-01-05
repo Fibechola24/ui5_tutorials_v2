@@ -1,9 +1,14 @@
-<mvc:View controllerName="com.clientname.zsapui5.controller.View2"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page  title="{i18n>title}">
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="com.clientname.zsapui5.controller.View2">
+
+  <Page title="RouteView2" showNavButton="true" navButtonPress=".onNavBack">
     <content>
-    <Button text="This is view 2 page"></Button>
+      <VBox class="sapUiSmallMargin">
+        <Title text="View 2" level="H2"/>
+        <Button text="Back to View 1" press=".onNavBack"/>
+      </VBox>
     </content>
-    </Page>
+  </Page>
 </mvc:View>

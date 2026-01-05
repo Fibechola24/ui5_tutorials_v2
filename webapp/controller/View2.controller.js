@@ -4,7 +4,8 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("com.clientname.zsapui5.controller.View2", {
-        onInit() {
-        }
+       onNavBack: function () {
+      this.getOwnerComponent().getRouter().navTo("RouteView1");     //navTo takes only the routename
+    }
     });
 });

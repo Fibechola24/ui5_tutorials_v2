@@ -1,18 +1,28 @@
 <mvc:View
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m"
-  controllerName="com.clientname.zsapui5.controller.View1">
-
-  <Page title="Welcome to the first view">
-    <content>
-    <Text text="Welcome text" class="sapMH1FontSize"></Text>
-      <VBox class="sapUiSmallMargin">
-        <Title text="View " level="H2"/>
-        <Button
-          text="Go to View 2"
-          type="Emphasized"
-          press=".onNavToView2"/>
-      </VBox>
-    </content>
-  </Page>
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="com.clientname.zsapui5.controller.View1"
+>
+    <Page title="Welcome to the first view">
+        <content>
+            <Text
+                text="Welcome text" id="idWelcomTxt"
+                class="sapMH1FontSize" textAlign="Center" width="100%"
+            />
+            <VBox class="sapUiSmallMargin">
+                <Title
+                    text="First View"
+                    level="H2"
+                />
+                <Button
+                    text="Go to View 2"
+                    type="Emphasized"
+                    press=".onNavToView2"
+                />
+            </VBox>
+            <Label text="Enter your name " class="sapUiSmallMarginBegin"></Label>
+            <Input id="idInpName" width="30%" class="sapUiSmallMarginBegin" maxLength="15" enabled="true" value="Nitin"></Input>
+            <Button text="Submit" class="sapUiSmallMarginBegin" type="Reject" press="onPressSubmit"></Button>
+        </content>
+    </Page>
 </mvc:View>
